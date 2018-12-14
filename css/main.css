@@ -1,0 +1,361 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+@charset "utf-8";
+a,
+abbr,
+acronym,
+address,
+applet,
+big,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", Verdana, Geneva, sans-serif;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: 0;
+}
+
+a,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+p,
+ul {
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+p {
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+footer {
+    display: none;
+}
+
+caption,
+td,
+th {
+    text-align: left;
+    font-weight: 400;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+* {
+    -webkit-text-size-adjust: none;
+}
+
+
+/* css reset //END */
+
+body {
+    background: #11131a;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", Verdana, Geneva, sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+.wrapper {
+    position: absolute;
+     top: 0;
+    left:0;
+    right: 0;
+    bottom: 0; 
+    overflow: hidden;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4c2ba;
+    border: 15px #5b5e5f solid;
+}
+.taipei_map{
+     width: 500px; 
+    position: relative;
+}
+.text{
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 10%;
+    padding: 3%;
+}
+h3{
+    display: block;
+    color: #11131a;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+h2{
+    display: block;
+    color: #11131a;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+span{
+    display: block;
+    color: #11131a;
+    font-size: 25px;
+    padding: 15px 0 15px 0;
+}
+
+.taipei_inner{
+    display: block;
+    /* position: absolute; */
+    top:0;
+    left: 0;
+    /* width: 50%; */
+}
+
+.map_01{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    /* width: 50%; */
+}
+.area {fill: #ffffff;}
+
+.area:hover {
+    stroke: black;
+    stroke-width: 60px; 
+}
+
+.M4053  {
+    fill: #d85a5a;
+    cursor: pointer;
+}
+.M2630  {
+    fill: #f17f7f;
+    cursor: pointer;
+}
+.M2320  {
+    fill: #9b58af;
+    cursor: pointer;
+}
+.M3226  {
+    fill: #e8b636;
+    cursor: pointer;
+}
+.M1261  {
+    fill: #7e5ac2;
+    cursor: pointer;
+}
+.M3623  {
+    fill: #eca92c;
+    cursor: pointer;
+}
+.M2762  {
+    fill: #74c164;
+    cursor: pointer;
+}
+.M2340  {
+    fill: rgb(38, 189, 96);
+    cursor: pointer;
+}
+.M1663  {
+    fill: #29bea5;
+    cursor: pointer;
+}
+.M3417  {
+    fill: #aece1c;
+    cursor: pointer;
+}
+.M2110  {
+    fill: #09a5ff;
+    cursor: pointer;
+}
+.M1581  {
+    fill: #2f51af;
+    cursor: pointer;
+}
+
+.follow {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    color: #323333;
+    font-weight:bold;
+}
