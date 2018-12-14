@@ -1,6 +1,9 @@
 $(function () {
+    var lastRefreshTime = new Date();
     var areaPeople;
-    LoadAllLocations();
+    LocationPeopleNum();
+    setTimeout(InitView, 100);
+    ReloadLocationPeopleNum();
     $(".area").mouseover(function (e) {
         $('path').attr('class', function (index, classNames) {
             return classNames.replace('default', '');
@@ -8,10 +11,10 @@ $(function () {
         ShowInfo(e);
     }).mouseout(
         function () {
-            $(".follow").html('').removeClass()
+            $(".follow").html('').removeClass();
         });
 
-    function ShowInfo(e) {
+    function ShowInfo(e) {        
         $(".showArea").text($(e.currentTarget).attr("data-area"));
         // console.log($(e.currentTarget).context.id)
         areaPeople.find(function (item, index, array) {
@@ -20,7 +23,6 @@ $(function () {
                 $("#swimPeopleNum").text(item.swPeopleNum + " / " + item.swMaxPeopleNum);
             }
         });
-
         //cursor show area 
         $("#follow").addClass("follow");
         window.onmousemove = function (ev) {
@@ -35,15 +37,15 @@ $(function () {
         }
     }
 
-    function LoadAllLocations() {
+    function LocationPeopleNum() {
         fetch('http://127.0.0.1:5000/gym').then(response =>
             response.json().then(data => ({
                 data: data,
                 status: response.status
             })).then(res => {
+                lastRefreshTime = new Date();
                 areaPeople = res.data.locationPeopleNums
                 // console.log(areaPeople[0].LID)
-                InitView();
             }));
     }
 
@@ -55,4 +57,11 @@ $(function () {
             }
         });
     }
+
+    function ReloadLocationPeopleNum(){
+		if(new Date().getTime() - lastRefreshTime.getTime() > 10000){//10 * 1000 = 10000
+			LocationPeopleNum();
+		}
+	    setTimeout(ReloadLocationPeopleNum, 1000);
+	}
 })
