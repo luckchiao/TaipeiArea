@@ -242,16 +242,27 @@ video {
     background-image: url(/static/images/BG.jpg);
     background-position:center;
     /* background-color: #c4c2ba; */
-    border: 15px #5b5e5f solid;
+    /* border: 15px #5b5e5f solid; */
 }
 .taipei_map{
      width: 500px; 
     position: relative;
 }
+.logo{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 6%;
+    padding: 3%;
+}
+.logo img{
+    widows: 325px;
+    height: 145px;
+}
 .text{
     display: block;
     position: absolute;
-    top:0px;
+    top:22%;
     left: 10%;
     padding: 3%;
 }
@@ -265,7 +276,7 @@ h3{
 h2{
     display: inline-block;
     color: #d0d5d6;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bolder;
     margin-bottom: 15px;
 }
@@ -369,8 +380,18 @@ i{
     color: #323333;
     font-weight:bold;
 }
-#pie{
+#chart{
     position: absolute;
     top: 58%;
     left: 65%;
+}
+#pie1{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+}
+#pie2{
+    position: absolute;
+    top: 10%;
+    left: 80%;
 }
