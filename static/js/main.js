@@ -24,20 +24,24 @@ $(function () {
             if (item.LID == $(e.currentTarget).context.id) {
                 $("#gymPeopleNum").text(item.gymPeopleNum + " / " + item.gymMaxPeopleNum);
                 $("#swimPeopleNum").text(item.swPeopleNum + " / " + item.swMaxPeopleNum);
+                $(".pGym").attr('max',item.gymMaxPeopleNum);
+                $(".pGym").val(item.gymPeopleNum);
+                $(".pSwim").attr('max',item.swMaxPeopleNum);
+                $(".pSwim").val(item.swPeopleNum);
             }
         });
         //cursor show area 
-        $("#follow").addClass("follow");
-        window.onmousemove = function (ev) {
-            var ev = ev || window.event;
-            var oLeft = ev.clientX + 40;
-            var oTop = ev.clientY + 30;
-            $(".follow").css({
-                'display': 'block',
-                'left': oLeft + 'px',
-                'top': oTop + 'px'
-            }).text($(e.currentTarget).attr("data-area"));
-        }
+        // $("#follow").addClass("follow");
+        // window.onmousemove = function (ev) {
+        //     var ev = ev || window.event;
+        //     var oLeft = ev.clientX + 40;
+        //     var oTop = ev.clientY + 30;
+        //     $(".follow").css({
+        //         'display': 'block',
+        //         'left': oLeft + 'px',
+        //         'top': oTop + 'px'
+        //     }).text($(e.currentTarget).attr("data-area"));
+        // }
     }
 
     function LocationPeopleNum() {
@@ -57,6 +61,10 @@ $(function () {
             if (item.LID == "BTSC") {
                 $("#gymPeopleNum").text(item.gymPeopleNum + " / " + item.gymMaxPeopleNum);
                 $("#swimPeopleNum").text(item.swPeopleNum + " / " + item.swMaxPeopleNum);
+                $(".pGym").attr('max',item.gymMaxPeopleNum);
+                $(".pGym").val(item.gymPeopleNum);
+                $(".pSwim").attr('max',item.swMaxPeopleNum);
+                $(".pSwim").val(item.swPeopleNum);
             }
         });
     }
