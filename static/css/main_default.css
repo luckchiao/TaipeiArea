@@ -308,65 +308,61 @@ i{
 .area {fill: #ffffff;}
 
 .area:hover {
-    fill: #58ebf1;
-    stroke: #fff;
-    stroke-width: 2px;
-    filter: drop-shadow(10px 10px 0px rgba(0,0,0,1));
+    stroke: black;
+    stroke-width: 60px; 
 }
 
 .default {
-    fill: #58ebf1;
-    stroke: #fff;
-    stroke-width: 2px;
-    filter: drop-shadow(10px 10px 0px rgba(0,0,0,1));
+    stroke: black;
+    stroke-width: 60px; 
 }
 
 .M4053  {
-    fill: #58c9ce;
+    fill: #d85a5a;
     cursor: pointer;
 }
 .M2630  {
-    fill: #175254;
+    fill: #f17f7f;
     cursor: pointer;
 }
 .M2320  {
-    fill: #58c9ce;
+    fill: #9b58af;
     cursor: pointer;
 }
 .M3226  {
-    fill: #428c90;
+    fill: #e8b636;
     cursor: pointer;
 }
 .M1261  {
-    fill: #3a9498;
+    fill: #7e5ac2;
     cursor: pointer;
 }
 .M3623  {
-    fill: #58c9ce;
+    fill: #eca92c;
     cursor: pointer;
 }
 .M2762  {
-    fill: #7bb6b9;
+    fill: #74c164;
     cursor: pointer;
 }
 .M2340  {
-    fill: #58c9ce;
+    fill: rgb(38, 189, 96);
     cursor: pointer;
 }
 .M1663  {
-    fill: #78aeb0;
+    fill: #29bea5;
     cursor: pointer;
 }
 .M3417  {
-    fill: #2b6a6d;
+    fill: #aece1c;
     cursor: pointer;
 }
 .M2110  {
-    fill: #4d999c;
+    fill: #09a5ff;
     cursor: pointer;
 }
 .M1581  {
-    fill: #58c9ce;
+    fill: #2f51af;
     cursor: pointer;
 }
 
@@ -392,7 +388,7 @@ i{
 #pie1{
     position: absolute;
     top: 10%;
-    left: 62%;
+    left: 65%;
 }
 #pie2{
     position: absolute;

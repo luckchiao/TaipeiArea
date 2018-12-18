@@ -72,6 +72,11 @@ $(function () {
         var pie1 = echarts.init(document.getElementById('pie1'), 'dark');
         // 指定图表的配置项和数据
         var option = {
+            title : {
+                text: '區域總人口數',
+                subtext: '',
+                x:'center'
+            },
             tooltip: {
                 trigger: 'item',
                 formatter: "{a} <br/>{b}: {c} ({d}%)"
@@ -121,6 +126,11 @@ $(function () {
         var pie2 = echarts.init(document.getElementById('pie2'), 'dark');
         // 指定图表的配置项和数据
         var option = {
+            title : {
+                text: '運動總人口數',
+                subtext: '',
+                x:'center'
+            },
             tooltip: {
                 trigger: 'item',
                 formatter: "{a} <br/>{b}: {c} ({d}%)"
@@ -160,7 +170,7 @@ $(function () {
                         }
                     },
                     data: [
-                        { value: 1335, name: '女性' },
+                        { value: 2335, name: '女性' },
                         { value: 1548, name: '男性' }
                     ]
                 }
@@ -184,7 +194,7 @@ $(function () {
                 }
             },
             backgroundColor: 'rgba(128, 128, 128, 0)',
-            color:['#D7709F', '#5294E2'],
+            color:['#D7709F', '#5294E2','#58c9ce'],
             toolbox: {
                 feature: {
                     dataView: {
@@ -208,12 +218,8 @@ $(function () {
             },
             xAxis: [{
                 type: 'category',
-                data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月',
-                    '12月'
-                ],
-                axisPointer: {
-                    type: 'shadow'
-                }
+                data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                axisPointer: {type: 'shadow'}
             }],
             yAxis: [{
                 type: 'value',
