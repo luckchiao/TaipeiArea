@@ -247,7 +247,7 @@ video {
 }
 
 .taipei_map {
-    width: 600px;
+    width: 46%;
     position: relative;
 }
 
@@ -451,22 +451,32 @@ g text  {
     font-weight: bold;
 }
 
-#chart {
+.chartTitle{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 64%;
+    top: 54%;
+}
+
+#chart2 {
     position: absolute;
     top: 58%;
-    left: 65%;
+    left: 63%;
 }
 
 #pie1 {
     position: absolute;
-    top: 10%;
-    left: 62%;
+    top: 60%;
+    left: 8%;
 }
 
-#pie2 {
+#chart1 {
     position: absolute;
-    top: 10%;
-    left: 80%;
+    top: 6%;
+    left: 63%;
 }
 
 progress {
