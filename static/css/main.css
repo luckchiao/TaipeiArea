@@ -394,27 +394,6 @@ i {
     cursor: pointer;
 }
 
-/* g text  {
-    font-size: 12px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-stretch: semi-condensed;
-    text-align: center;
-    line-height: 89.99999762%;
-    writing-mode: lr-tb;
-    text-anchor: middle;
-    fill: #FFFFFF;
-    fill-opacity: 1;
-    stroke: none;
-    stroke-width: 1px;
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-opacity: 1;
-    font-family: "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", Verdana, Geneva, sans-serif;
-    cursor: pointer;
-} */
-
 g text  {
     font-size: 10em;
     font-style: normal;
@@ -457,26 +436,26 @@ g text  {
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    left: 64%;
+    left: 61%;
     top: 54%;
 }
 
 #chart2 {
     position: absolute;
     top: 58%;
-    left: 63%;
+    left: 61%;
+}
+
+#chart1 {
+    position: absolute;
+    top: 6%;
+    left: 61%;
 }
 
 #pie1 {
     position: absolute;
     top: 60%;
     left: 8%;
-}
-
-#chart1 {
-    position: absolute;
-    top: 6%;
-    left: 63%;
 }
 
 progress {
