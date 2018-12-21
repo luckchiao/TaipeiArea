@@ -278,7 +278,7 @@ $(function () {
         var dataMap = {};
 
         function dataFormatter(obj) {
-            var pList = ['松山', '信義', '大安', '山西', '中山', '中正', '大同', '萬華', '文山', '南港', '內湖', '士林', '北投'];
+            var pList = ['松山', '信義', '大安', '中山', '中正', '大同', '萬華', '文山', '南港', '內湖', '士林', '北投'];
             var temp;
             for (var month = 1; month <= 10; month++) {
                 var max = 0;
