@@ -293,6 +293,7 @@ g text {
     font-weight: bold;
     line-height: 1.8;
     font-family: "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", Verdana, Geneva, sans-serif;
+    border-radius: 5px;
 }
 
 .follow img{
