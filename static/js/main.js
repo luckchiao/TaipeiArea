@@ -28,17 +28,17 @@ $(function () {
             }
         });
         //cursor show area 
-        // $("#follow").addClass("follow");
-        // window.onmousemove = function (ev) {
-        //     var ev = ev || window.event;
-        //     var oLeft = ev.clientX + 40;
-        //     var oTop = ev.clientY + 30;
-        //     $(".follow").css({
-        //         'display': 'block',
-        //         'left': oLeft + 'px',
-        //         'top': oTop + 'px'
-        //     }).text($(e.currentTarget).attr("data-area"));
-        // }
+        $("#follow").addClass("follow");
+        window.onmousemove = function (ev) {
+            var ev = ev || window.event;
+            var oLeft = ev.clientX + 40;
+            var oTop = ev.clientY + 30;
+            $(".follow").css({
+                'display': 'block',
+                'left': oLeft + 'px',
+                'top': oTop + 'px'
+            }).html('<img src="/static/images/location.png"/>'+$(e.currentTarget).attr("data-location")+"<br>"+'<img src="/static/images/train.png"/>'+$(e.currentTarget).attr("data-area"));
+        }
     }
 
     function LocationPeopleNum() {
