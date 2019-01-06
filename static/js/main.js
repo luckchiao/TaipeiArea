@@ -37,7 +37,7 @@ $(function () {
                 'display': 'block',
                 'left': oLeft + 'px',
                 'top': oTop + 'px'
-            }).html('<img src="/static/images/location.png"/>'+$(e.currentTarget).attr("data-location")+"<br>"+'<img src="/static/images/train.png"/>'+$(e.currentTarget).attr("data-area"));
+            }).html('<img src="/static/images/location.png"/>'+$(e.currentTarget).attr("data-location")+"<br>"+'<img src="/static/images/train.png"/>'+$(e.currentTarget).attr("data-MRT"));
         }
     }
 
